@@ -1,0 +1,10 @@
+1. hero img
+    > home
+    > profile
+    > reqruitments
+    > facility
+    > payments
+
+2. Navbar img for android
+
+3. 
