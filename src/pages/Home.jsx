@@ -1,19 +1,30 @@
+import { useState } from "react";
+
+import {Swiper, SwiperSlide} from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 import Mainlayout from "../components/layout/Mainlayout";
 import heroImg from "../assets/img/hero-img-removebg.png";
 
-import img1 from "../assets/img/slider-arofah-tour-1.jpg"
-import img2 from "../assets/img/slider-arofah-tour-2.jpg"
-
+import img1 from "../assets/img/10-2024/package_1.jpeg"
+import img2 from "../assets/img/10-2024/package_2.jpeg"
+import img3 from "../assets/img/10-2024/package_3.jpeg"
+import img4 from "../assets/img/10-2024/package_4.jpeg"
 
 function Home() {
 
-    const sliders = [{img1},{img2}];
+    
  
     return (
         <>
         <Mainlayout>
-         <main className="pt-[10rem]  font-gilda text-xl ">
-            {/* hero section */}
+         <main className="pt-[8rem]  font-gilda text-xl ">
+            {/* hero section - complete */}
             <section>
                 <h1 className="text-5xl px-4 mb-[-2.5rem]"><span className="text-brand-600">Teman terbaik</span> untuk perjalanan umroh anda.</h1>
                 <div className="relative w-full h-[30rem] px-0 overflow-hidden mt-[-7rem]  ">
@@ -23,9 +34,9 @@ function Home() {
                     </div>
                 </div>
             </section>
-            {/* end */}
+            {/* complete */}
 
-            {/* marketing section */}
+            {/* marketing section - complete */}
             <section className="mt-[-10rem]">
                 {/* display img */}
                 <div className="w-full px-4 py-8  bg-brand-600 text-neutral-100  text-center">
@@ -34,19 +45,57 @@ function Home() {
                     <h3 className="text-[1.1rem] font-urbanist">Jadikan perjalanan umroh Anda penuh makna dan kenyamanan.</h3>
                 </div>
             </section>
-            {/* end */}
+            {/* complete */}
 
             {/* package section */}
-            <section>
-                <h1>Temukan paket umroh terbaik anda</h1>
-                <p></p>
+        <section className="mt-20 p-6">
+                <h2 className="text-5xl font-medium">Temukan paket umroh terbaik untuk anda</h2>
+                <p className="mt-4 font-urbanist text-neutral-700 text-[1.1rem]">Kami punya 2 paket menarik yang bisa anda pilih</p>
                 
+    
                 {/* package card */}
-                <div>
-                    <img src="" alt="package-slider" />
-                    <h3></h3>
-                    <p></p>
-                </div>
+            <Swiper
+                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                scrollbar={{ draggable: true }}
+                 spaceBetween={50}>
+
+                    {/* paket 1 */}
+                <SwiperSlide>  
+                    <div className="w-[14rem] bg-neutral-100 m-auto my-8 rounded-md overflow-hidden shadow-sm shadow-neutral-300 transition duration-200 hover:shadow-md hover:shadow-neutral-300 hover:scale-[105%] hover:-translate-y-2">
+                        <div className="w-[15rem] h-[15rem] overflow-hidden relative">
+                          <img src={img1} alt="package-slider" className="absolute top-[-13%] left-[-5%]"/>
+                        </div>
+                    {/* text wrap */}
+
+                        <div className=" text-[1rem] font-urbanist p-4 text-neutral-700 text-center">
+                            <h3 className="text-2xl">Murah - 9 hari</h3>
+                             <p className="mt-2">Rp. 20,9jt</p>
+                         </div>
+                    </div>
+
+                </SwiperSlide>
+                    {/* paket 1 end */}
+
+                    {/* paket 2 */}
+                <SwiperSlide>
+                    
+                     <div className="w-[14rem] bg-neutral-100 m-auto my-8 rounded-md overflow-hidden shadow-sm shadow-neutral-300 transition duration-200 hover:shadow-md hover:shadow-neutral-300 hover:scale-[105%] hover:-translate-y-2">
+                        <div className="w-[15rem] h-[15rem] overflow-hidden relative">
+                            <img src={img2} alt="package-slider" className="absolute top-[-10%] left-[-5%]"/>
+                        </div>
+                    {/* text wrap */}
+
+                    <div className=" text-[1rem] font-urbanist p-4 text-neutral-700 text-center">
+                    <h3 className=" text-2xl">Milad - 12 hari</h3>
+                    <p className="mt-2 ">Rp. 34,5jt </p>
+                    </div>
+                    </div>
+                </SwiperSlide>
+                    {/* paket 2 end */}
+
+                </Swiper>
+                {/* package card end */}
+
             </section>
 
             {/* benefit section */}
