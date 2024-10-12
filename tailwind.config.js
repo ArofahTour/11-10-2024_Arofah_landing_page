@@ -24,6 +24,7 @@ export default {
           'neutral-500': '#8C8C8C',
           'neutral-600': '#737373',
           'neutral-700': '#595959',
+          'neutral-900': '#262626',
        },
     },
     fontFamily: {

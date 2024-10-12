@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { ArrowRight } from "react-feather";
+
 import {Swiper, SwiperSlide} from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
@@ -48,13 +50,13 @@ function Home() {
             {/* complete */}
 
             {/* package section */}
-        <section className="mt-20 p-6">
+            <section className="mt-20 p-6">
                 <h2 className="text-5xl font-medium">Temukan paket umroh terbaik untuk anda</h2>
                 <p className="mt-4 font-urbanist text-neutral-700 text-[1.1rem]">Kami punya 2 paket menarik yang bisa anda pilih</p>
                 
     
                 {/* package card */}
-            <Swiper
+                <Swiper
                 modules={[Navigation, Pagination, Scrollbar, A11y]}
                 scrollbar={{ draggable: true }}
                  spaceBetween={50}>
@@ -99,9 +101,17 @@ function Home() {
             </section>
 
             {/* benefit section */}
-            <section>
-                <h1></h1>
-                <p></p>
+            <section className="text-center mt-20">
+                <h2 className="text-4xl text-neutral-900">Kenapa harus memilih kami?</h2>
+                <p className="m-4 text-[1.2rem] font-urbanist">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem adipisci neque, ipsam maiores et rerum dolor obcaecati, quae tempora eaque dicta! Est aliquid asperiores error? Accusantium molestias ut eum!</p>
+
+                <div className="px-4 py-8 bg-neutral-50 shadow-sm text-left">
+                    <h2 className="text-3xl mb-4 text-neutral-900">Proffesional tour guide</h2>
+                    <p className="text-[1.1rem] font-urbanist text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod commodi eligendi sed incidunt harum quae ea provident.</p>
+
+
+                    <p className="text-[1.1rem] text-right font-urbanist text-brand-600 mt-12">Lebih detail <span><ArrowRight className="inline" /></span></p>
+                </div>
             </section>
 
             {/* card section */}
@@ -129,7 +139,7 @@ function Home() {
 
             {/* client section */}
             <section>
-                <h1>partner kami</h1>
+                <h1></h1>
             </section>
          </main>
         </Mainlayout>
