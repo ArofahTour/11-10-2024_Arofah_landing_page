@@ -24,6 +24,13 @@ export default {
           'neutral-700': '#595959',
        },
     },
+    fontFamily: {
+      'gilda': ['GildaDisplay', 'serif'],
+      'urbanist': ['Urbanist', 'sans-serif'],
+    },
+    backgroundImage: {
+      'gradient-linear': 'linear-gradient(to bottom, #595959 0%, #EAFAF9 100%)',
+    },
   plugins: [],
   }
 }

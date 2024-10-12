@@ -17,11 +17,11 @@ function Footer() {
             </div>
             <div className="">
                 <div className="flex gap-4 m-8 text-brand-600">
-                    <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-1"><Facebook /></button>
-                    <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-1"><Instagram /></button>
-                    <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-1"><Youtube /></button>
-                    <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-1"><Twitter /></button>
-                   
+                    <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400"><Facebook /></button>
+                    <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400"><Instagram /></button>
+                    <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400"><Youtube /></button>
+                    <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400"><Twitter /></button>
+                  
                 </div>
             </div>
 

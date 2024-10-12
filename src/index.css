@@ -2,3 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'GildaDisplay';
+    src: url('./assets/fonts/GildaDisplay-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    font-weight: 400;
+    font-style: normal;
+    src: url('./assets/fonts/static/Urbanist-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    font-weight: 500;
+    font-style: normal;
+    src: url('./assets/fonts/static/Urbanist-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    font-weight: 600;
+    font-style: normal;
+    src: url('./assets/fonts/static/Urbanist-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    font-weight: 700;
+    font-style: normal;
+    src: url('./assets/fonts/static/Urbanist-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    font-weight: 800;
+    font-style: normal;
+    src: url('./assets/fonts/static/Urbanist-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Urbanist';
+    font-weight: 900;
+    font-style: normal;
+    src: url('./assets/fonts/static/Urbanist-Black.ttf') format('truetype');
+}
