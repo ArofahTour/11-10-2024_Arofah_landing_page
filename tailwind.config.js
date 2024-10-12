@@ -7,6 +7,8 @@ export default {
   theme: {
     extend: {
       colors: {
+          'white-300': '#97E8E3',
+
           'brand-100': '#EAFAF9',
           'brand-300': '#97E8E3',
           'brand-400': '#6DDED8',
