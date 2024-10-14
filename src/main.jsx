@@ -32,9 +32,23 @@ const root = createBrowserRouter([
     element: <Reqruitments />,
   },
   {
-    path: "/payments",
+    path: "/payment",
     element: <Payment />,
   },
+  
+  {
+    path: "/paket",
+    element: <Payment />,
+  },
+  {
+    path: "/paket/reguler",
+    element: <Payment />,
+  },
+  {
+    path: "/paket/milad",
+    element: <Payment />,
+  },
+
 
 
 ])

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { ArrowRight } from "react-feather";
 
@@ -12,6 +12,8 @@ import 'swiper/css/scrollbar';
 
 import Mainlayout from "../components/layout/Mainlayout";
 import heroImg from "../assets/img/hero-img-removebg.png";
+import Card from "../components/ui/Card";
+import CardBrand from "../components/ui/CardBrand";
 
 import img1 from "../assets/img/10-2024/package_1.jpeg"
 import img2 from "../assets/img/10-2024/package_2.jpeg"
@@ -62,26 +64,28 @@ function Home() {
                  spaceBetween={50}>
 
                     {/* paket 1 */}
-                <SwiperSlide>  
-                    <div className="w-[14rem] bg-neutral-100 m-auto my-8 rounded-md overflow-hidden shadow-sm shadow-neutral-300 transition duration-200 hover:shadow-md hover:shadow-neutral-300 hover:scale-[105%] hover:-translate-y-2">
+             <SwiperSlide>  
+                <Link to={'/paket/reguler'}>
+                    <div className="w-[14rem] bg-neutral-100 m-auto my-8 rounded-md overflow-hidden cursor-pointer shadow-sm shadow-neutral-300 transition duration-100 hover:shadow-black      hover:opacity-[80%] hover:scale-[90%] hover:shadow-[0_0_30px_-5px_rgba(0,0,0,0.3)]">
                         <div className="w-[15rem] h-[15rem] overflow-hidden relative">
                           <img src={img1} alt="package-slider" className="absolute top-[-13%] left-[-5%]"/>
                         </div>
-                    {/* text wrap */}
+                        {/* text wrap */}
 
                         <div className=" text-[1rem] font-urbanist p-4 text-neutral-700 text-center">
-                            <h3 className="text-2xl">Murah - 9 hari</h3>
-                             <p className="mt-2">Rp. 20,9jt</p>
+                            <h3 className="text-2xl">Reguler - 9 hari</h3>
+                            <p className="mt-2">Rp. 20,9jt</p>
                          </div>
                     </div>
-
-                </SwiperSlide>
+               </Link>
+            </SwiperSlide>
                     {/* paket 1 end */}
 
                     {/* paket 2 */}
                 <SwiperSlide>
-                    
-                     <div className="w-[14rem] bg-neutral-100 m-auto my-8 rounded-md overflow-hidden shadow-sm shadow-neutral-300 transition duration-200 hover:shadow-md hover:shadow-neutral-300 hover:scale-[105%] hover:-translate-y-2">
+                    <Link to={'/paket/milad'}>
+            
+                     <div className="w-[14rem] bg-neutral-100 m-auto my-8 rounded-md overflow-hidden cursor-pointer shadow-sm shadow-neutral-300 transition duration-100 hover:shadow-black  hover:opacity-[80%] hover:scale-[90%] hover:shadow-[0_0_30px_-5px_rgba(0,0,0,0.3)]">
                         <div className="w-[15rem] h-[15rem] overflow-hidden relative">
                             <img src={img2} alt="package-slider" className="absolute top-[-10%] left-[-5%]"/>
                         </div>
@@ -92,6 +96,8 @@ function Home() {
                     <p className="mt-2 ">Rp. 34,5jt </p>
                     </div>
                     </div>
+                            
+                    </Link>
                 </SwiperSlide>
                     {/* paket 2 end */}
 
@@ -103,43 +109,19 @@ function Home() {
             {/* benefit section */}
             <section className="text-center mt-20">
                 <h2 className="text-4xl text-neutral-900">Kenapa harus memilih kami?</h2>
-                <p className="m-4 text-[1.2rem] font-urbanist">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, dolorem adipisci neque, ipsam maiores et rerum dolor obcaecati, quae tempora eaque dicta! Est aliquid asperiores error? Accusantium molestias ut eum!</p>
+                <p className="m-4 text-[1.2rem] font-urbanist">Sejak tahun 2013, Arofah Tour & Travel telah mendampingi ribuan jamaah dalam perjalanan suci ke tanah haram. Kepercayaan jamaah dari berbagai penjuru adalah bukti nyata dari pelayanan berkualitas yang kami berikan. Dengan pengalaman dan komitmen kami, Arofah terus menjadi pilihan utama, dan sekarang saatnya Anda memilih kami sebagai partner perjalanan ibadah Anda!</p>
 
-                <div className="px-4 py-8 bg-neutral-50 shadow-sm text-left">
-                    <h2 className="text-3xl mb-4 text-neutral-900">Proffesional tour guide</h2>
-                    <p className="text-[1.1rem] font-urbanist text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quod commodi eligendi sed incidunt harum quae ea provident.</p>
+                <Card h2={' Layanan Terpadu dan Nyaman'} p={' Kami menyediakan layanan yang menyeluruh untuk kenyamanan dan fokus ibadah Anda.'} />
+                <CardBrand h2={`Pembimbing Terbaik, Pengalaman Terbaik`} p={`Perjalanan ibadah Anda akan berkesan dengan pembimbing terbaik yang siap mendampingi.`} />
+                <Card h2={'Komitmen pada Kualitas dan Kepuasan Jamaah'} p={`Kepuasan Anda adalah prioritas kami.`} />
 
 
-                    <p className="text-[1.1rem] text-right font-urbanist text-brand-600 mt-12">Lebih detail <span><ArrowRight className="inline" /></span></p>
-                </div>
             </section>
 
-            {/* card section */}
-            <section>'
-                <div className="">
-                <h1></h1>
-                <p></p>
-
-                <h2></h2>
-                </div>
-                <div className="">
-                <h1></h1>
-                <p></p>
-
-                <h2></h2>
-                </div>
-                <div className="">
-                <h1></h1>
-                <p></p>
-
-                <h2></h2>
-                </div>
-   
-            </section>
 
             {/* client section */}
             <section>
-                <h1></h1>
+                <h1>Partner kami</h1>
             </section>
          </main>
         </Mainlayout>

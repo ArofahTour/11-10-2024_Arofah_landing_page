@@ -1,4 +1,4 @@
-import logo from "../../assets/logo/logo-arofah-tour-palembang.png"
+import logo from "../../assets/logo/logo_arofah-removebg.png"
 import { Facebook } from "react-feather";
 import { Instagram } from "react-feather";
 import { Youtube } from "react-feather";
@@ -11,9 +11,9 @@ function Footer() {
     return (
         <>
         <footer className="pt-[10rem]">
-            <div className="">
+            <div className="ml-4">
             <img src={logo} alt="arofah-logo" className="w-[6rem]" />
-            <h1 className="ml-4 mt-4 mb-8 text-xl text-neutral-700 z-[-10]">Mewujudkan Impian Umroh dengan Pelayanan Terbaik.</h1>
+            <h1 className=" mt-4 mb-8 text-xl text-neutral-700 z-[-10]">Mewujudkan Impian Umroh dengan Pelayanan Terbaik.</h1>
             </div>
             <div className="">
                 <div className="flex gap-4 m-8 text-brand-600">
