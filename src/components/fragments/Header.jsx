@@ -17,7 +17,7 @@ function Header() {
                     <img src={logo} alt="arofah-logo" className="w-[5rem]" />
             
             {/* navbar links */}
-                <ul className="absolute md:hidden w-full top-[100%] right-0 text-brand-600 pl-4 pb-8 pt-4 shadow-md shadow-brand-400 rounded-md transition duration-500 ease-in-out z-10 bg-brand-100 translate-x-[40rem] h-[100vh] min-[600px]:text-center min-[600px]:pt-[5rem]" ref={linkBoxRef}>
+                <ul className="absolute md:hidden w-full top-[100%] right-0 text-brand-600 pl-4 pb-8 pt-4 shadow-md shadow-brand-400 rounded-md transition duration-500 ease-in-out z-[99999] bg-brand-100 translate-x-[40rem] h-[100vh] min-[600px]:text-center min-[600px]:pt-[5rem]" ref={linkBoxRef}>
                     <li className="text-2xl mb-8 ml-4 font-semibold mr-8 transition duration-300 hover:text-brand-400 min-[600px]:text-3xl "><Link to={"/"}>Home</Link></li>
                     <li className="text-2xl mb-8 ml-4 font-semibold mr-8 transition duration-300 hover:text-brand-400 min-[600px]:text-3xl "><Link to="/profile">Profile</Link></li>
                     <li className="text-2xl mb-8 ml-4 font-semibold mr-8 transition duration-300 hover:text-brand-400 min-[600px]:text-3xl "><Link to={"/reqruitments"}>Persyaratan</Link></li>

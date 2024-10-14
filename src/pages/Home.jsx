@@ -23,8 +23,7 @@ import CardBrand from "../components/ui/CardBrand";
 
 import img1 from "../assets/img/10-2024/package_1.jpeg"
 import img2 from "../assets/img/10-2024/package_2.jpeg"
-import img3 from "../assets/img/10-2024/package_3.jpeg"
-import img4 from "../assets/img/10-2024/package_4.jpeg"
+
 import partnerImg1 from "../assets/logo/partner-logo/airasia.png"
 import partnerImg2 from "../assets/logo/partner-logo/emirates.png"
 import partnerImg3 from "../assets/logo/partner-logo/etihad.png"
