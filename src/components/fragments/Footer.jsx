@@ -10,7 +10,7 @@ import { Mail } from "react-feather";
 function Footer() {
     return (
         <>
-        <footer className="pt-[10rem]">
+        <footer className="pt-[2rem] border-t-2 pb-4 border-brand-300 mt-12">
             <div className="ml-4">
             <img src={logo} alt="arofah-logo" className="w-[6rem]" />
             <h1 className=" mt-4 mb-8 text-xl text-neutral-700 z-[-10]">Mewujudkan Impian Umroh dengan Pelayanan Terbaik.</h1>
