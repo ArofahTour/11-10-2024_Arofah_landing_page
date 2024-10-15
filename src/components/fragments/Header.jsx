@@ -28,10 +28,10 @@ function Header() {
               <Link to="/profile">Profile</Link>
             </li>
             <li className="text-2xl mb-8 ml-4 font-semibold mr-8 transition duration-300 hover:text-brand-400 min-[600px]:text-3xl ">
-              <Link to={"/reqruitments"}>Persyaratan</Link>
+              <Link to={"/paket"}>Paket umroh</Link>
             </li>
             <li className="text-2xl mb-8 ml-4 font-semibold mr-8 transition duration-300 hover:text-brand-400 min-[600px]:text-3xl ">
-              <Link to={"/facility"}>Fasilitas</Link>
+              <Link to={"/reqruitments"}>Persyaratan</Link>
             </li>
             <li className="text-2xl mb-8 ml-4 font-semibold mr-8 transition duration-300 hover:text-brand-400 min-[600px]:text-3xl ">
               <Link to={"/payment"}>Pembayaran</Link>
@@ -71,10 +71,10 @@ function Header() {
               <Link to="/profile">Profile</Link>
             </li>
             <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 ">
-              <Link to={"/reqruitments"}>Persyaratan</Link>
+              <Link to={"/paket"}>Paket umroh</Link>
             </li>
             <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 ">
-              <Link to={"/facility"}>Fasilitas</Link>
+              <Link to={"/reqruitments"}>Persyaratan</Link>
             </li>
             <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 ">
               <Link to={"/payment"}>Pembayaran</Link>

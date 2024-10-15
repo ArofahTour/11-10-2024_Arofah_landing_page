@@ -98,7 +98,10 @@ function Profile() {
 
           {/* organization structure section */}
           <section className="px-4">
-            <h2 className="text-4xl font-gilda capitalize mt-16 mb-8 text-center">
+            <h2
+              className="text-4xl font-gilda capitalize mt-16 mb-8 text-center"
+              data-aos="fade-up"
+            >
               struktur organisasi
             </h2>
 
