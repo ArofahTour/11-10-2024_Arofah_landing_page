@@ -20,7 +20,7 @@ function Reqruitments() {
     <>
       <Mainlayout>
         <main className="overflow-hidden">
-          <HeroCard img={req} />
+          <HeroCard src={req} />
 
           <h1 className="text-5xl font-gilda text-center my-8">Persyaratan</h1>
 

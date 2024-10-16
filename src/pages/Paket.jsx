@@ -23,20 +23,25 @@ function Paket() {
     <>
       <Mainlayout>
         <main className="overflow-hidden">
-          <HeroCard img={img1} className="top-[-10%]" h1={"Paket Umroh kami"} />
+          <HeroCard
+            src={img1}
+            className="top-[-10%]"
+            h1={"Paket Umroh kami"}
+            top={"0%"}
+          />
 
           <DivCard>
             <PackageImg src={packageImg1} alt={"package-img"} />
             <TimesCard time={"9 Hari"} />
             <PackageTitle title={"Reguler"} depart={"Januari 2025"} />
-            <PackagePrice price={"20.9jt"} />
+            <PackagePrice price={"20.9jt"} link={"/paket/reguler"} />
           </DivCard>
 
           <DivCard>
             <PackageImg src={packageImg2} alt={"package-img"} />
             <TimesCard time={"12 Hari"} />
             <PackageTitle title={"Milad"} depart={"February 2025"} />
-            <PackagePrice price={"34.5jt"} />
+            <PackagePrice price={"34.5jt"} link={"/paket/milad"} />
           </DivCard>
 
           <ContactCard />
