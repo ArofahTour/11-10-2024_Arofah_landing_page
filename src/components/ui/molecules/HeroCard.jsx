@@ -1,6 +1,3 @@
-import profile from "../../assets/img/10-2024/1.jpeg";
-import req from "../../assets/img/10-2024/2.jpeg";
-
 function HeroCard(props) {
   return (
     <>
@@ -12,7 +9,7 @@ function HeroCard(props) {
             alt="hero-img"
             className="absolute top-[0%] left-[0%] z[-1] min-[390px]:top-[-10%]"
           />
-          <h1 className="absolute text-5xl font-gilda text-white-100 z-[2]">
+          <h1 className="absolute text-5xl font-gilda text-white-100 z-[2] text-center">
             {props.h1}
           </h1>
         </div>

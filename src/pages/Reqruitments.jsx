@@ -1,6 +1,6 @@
 import Mainlayout from "../components/layout/Mainlayout";
-import ContactCard from "../components/ui/ContactCard";
-import HeroCard from "../components/ui/HeroCard";
+import ContactCard from "../components/ui/organism/ContactCard";
+import HeroCard from "../components/ui/molecules/HeroCard";
 
 import req from "../assets/img/10-2024/2.jpeg";
 
@@ -37,7 +37,7 @@ function Reqruitments() {
             </li>
             <li className=" my-4 text-md">
               Foto dengan warna background putih (80% zoom kepala 3×4 sebanyak 5
-              lembar, 4×6 sebanyak 5 lembar)
+              lembar, 4x6 sebanyak 5 lembar)
             </li>
             <li className=" my-4 text-md" data-aos="fade-right">
               Dokumen diserahkan paling lambat 40 hari sebelum jadwal

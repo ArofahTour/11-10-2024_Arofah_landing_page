@@ -1,6 +1,6 @@
 import Mainlayout from "../components/layout/Mainlayout";
-import ContactCard from "../components/ui/ContactCard";
-import HeroCard from "../components/ui/HeroCard";
+import ContactCard from "../components/ui/organism/ContactCard";
+import HeroCard from "../components/ui/molecules/HeroCard";
 
 import img1 from "../assets/img/makkah.jpg";
 

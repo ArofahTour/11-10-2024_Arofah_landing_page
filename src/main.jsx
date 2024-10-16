@@ -11,6 +11,9 @@ import Profile from "./pages/Profile";
 import Reqruitments from "./pages/Reqruitments";
 import Paket from "./pages/Paket";
 
+import Reguler from "./pages/package/Reguler";
+import Milad from "./pages/package/Milad";
+
 const root = createBrowserRouter([
   {
     path: "/",
@@ -39,11 +42,11 @@ const root = createBrowserRouter([
   },
   {
     path: "/paket/reguler",
-    element: <Payment />,
+    element: <Reguler />,
   },
   {
     path: "/paket/milad",
-    element: <Payment />,
+    element: <Milad />,
   },
 ]);
 

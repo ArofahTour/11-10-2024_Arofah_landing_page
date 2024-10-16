@@ -1,14 +1,14 @@
-import Header from "../fragments/Header";
-import Footer from "../fragments/Footer";
+import Header from "./Header";
+import Footer from "./Footer";
 
-function Mainlayout({children}) {
-    return (
-        <>
-        <Header />
-            {children}
-        <Footer />
-        </>
-    );
+function Mainlayout({ children }) {
+  return (
+    <>
+      <Header />
+      {children}
+      <Footer />
+    </>
+  );
 }
 
 export default Mainlayout;

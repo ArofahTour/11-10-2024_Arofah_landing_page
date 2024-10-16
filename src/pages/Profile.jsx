@@ -11,8 +11,8 @@ import heroImg from "../assets/img/10-2024/1.jpeg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import ContactCard from "../components/ui/ContactCard";
-import HeroCard from "../components/ui/HeroCard";
+import ContactCard from "../components/ui/organism/ContactCard";
+import HeroCard from "../components/ui/molecules/HeroCard";
 
 function Profile() {
   useEffect(() => {

@@ -17,8 +17,8 @@ import "swiper/css/scrollbar";
 
 import Mainlayout from "../components/layout/Mainlayout";
 import heroImg from "../assets/img/hero-img-removebg.png";
-import Card from "../components/ui/Card";
-import CardBrand from "../components/ui/CardBrand";
+import Card from "../components/ui/molecules/Card";
+import CardBrand from "../components/ui/organism/CardBrand";
 
 import img1 from "../assets/img/10-2024/package_1.jpeg";
 import img2 from "../assets/img/10-2024/package_2.jpeg";
