@@ -12,7 +12,7 @@ function Footer() {
   <DataAos />;
   return (
     <>
-      <footer className="pt-[2rem] border-t-2 pb-4 border-brand-300 mt-12">
+      <footer className="pt-[2rem] border-t-2 pb-4 border-brand-300 mt-12 overflow-hidden">
         <div className="ml-4">
           <img
             src={logo}
@@ -62,11 +62,7 @@ function Footer() {
           </div>
         </div>
 
-        <div
-          className="font-urbanist text-sm text-center font-semibold text-neutral-800"
-          data-aos="fade-right"
-          data-aos-delay="300"
-        >
+        <div className="font-urbanist text-sm text-center font-semibold text-neutral-800 ">
           <p>Nomor induk berusaha(NIB): 0220209292964</p>
           <p>© 2024 Pt.Arofah Perdana Mandiri | All Right reserve </p>
         </div>
