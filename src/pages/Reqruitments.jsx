@@ -22,7 +22,9 @@ function Reqruitments() {
         <main className="overflow-hidden">
           <HeroCard src={req} />
 
-          <h1 className="text-5xl font-gilda text-center my-8">Persyaratan</h1>
+          <h1 className="text-5xl font-gilda text-center my-8 font-bold text-brand-600">
+            Persyaratan
+          </h1>
 
           <ol className="list-decimal px-8 font-urbanist text-left ">
             <li className=" my-4 text-md">

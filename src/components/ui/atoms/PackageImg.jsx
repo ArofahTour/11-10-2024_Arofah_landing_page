@@ -5,7 +5,7 @@ function PackageImg(props) {
         <img
           src={props.src}
           alt={props.alt}
-          className="absolute w-full top-[-13%] left-[0%]"
+          className={`absolute w-full h-[${props.h}] top-[-13%] left-[0%]`}
         />
       </div>
     </>

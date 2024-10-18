@@ -33,14 +33,22 @@ function Paket() {
           <DivCard>
             <PackageImg src={packageImg1} alt={"package-img"} />
             <TimesCard time={"9 Hari"} />
-            <PackageTitle title={"Reguler"} depart={"Januari 2025"} />
+            <PackageTitle
+              title={"Reguler"}
+              depart={"Depart: Januari 2025"}
+              p={"4"}
+            />
             <PackagePrice price={"20.9jt"} link={"/paket/reguler"} />
           </DivCard>
 
           <DivCard>
             <PackageImg src={packageImg2} alt={"package-img"} />
             <TimesCard time={"12 Hari"} />
-            <PackageTitle title={"Milad"} depart={"February 2025"} />
+            <PackageTitle
+              title={"Milad"}
+              depart={"Depart: February 2025"}
+              p={"4"}
+            />
             <PackagePrice price={"34.5jt"} link={"/paket/milad"} />
           </DivCard>
 

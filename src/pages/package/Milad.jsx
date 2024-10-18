@@ -10,6 +10,7 @@ import IteneraryContainer from "../../components/ui/organism/IteneraryContainer"
 import TextCard from "../../components/ui/atoms/TextCard";
 import H2small from "../../components/ui/atoms/H2small";
 import FacilityMilad from "../../components/ui/organism/FacilityMilad";
+import ContactCard from "../../components/ui/organism/ContactCard";
 
 function Milad() {
   return (
@@ -135,6 +136,8 @@ function Milad() {
               />
             </IteneraryContainer>
           </section>
+
+          <ContactCard />
         </main>
       </Mainlayout>
     </>

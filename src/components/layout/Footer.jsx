@@ -31,34 +31,27 @@ function Footer() {
         </div>
         <div>
           <div className="flex gap-4 m-8 text-brand-600">
-            <button
-              data-aos="fade-right"
-              data-aos-delay="100"
-              className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400"
-            >
-              <Facebook />
-            </button>
-            <button
-              data-aos="fade-right"
-              data-aos-delay="200"
-              className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400"
-            >
-              <Instagram />
-            </button>
-            <button
-              data-aos="fade-right"
-              data-aos-delay="300"
-              className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400"
-            >
-              <Youtube />
-            </button>
-            <button
-              data-aos="fade-right"
-              data-aos-delay="400"
-              className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400"
-            >
-              <Twitter />
-            </button>
+            <div data-aos="fade-right" data-aos-delay="100">
+              <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400">
+                <Facebook />
+              </button>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="200">
+              <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400">
+                <Instagram />
+              </button>
+            </div>
+            <div data-aos="fade-right" data-aos-delay="300">
+              <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400">
+                <Youtube />
+              </button>
+            </div>
+
+            <div data-aos="fade-right" data-aos-delay="400">
+              <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400">
+                <Twitter />
+              </button>
+            </div>
           </div>
         </div>
 

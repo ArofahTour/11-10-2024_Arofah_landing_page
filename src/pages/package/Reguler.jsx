@@ -8,6 +8,7 @@ import IteneraryContainer from "../../components/ui/organism/IteneraryContainer"
 import TextCard from "../../components/ui/atoms/TextCard";
 import DataAos from "../../components/ui/molecules/DataAos";
 import FacilityReguler from "../../components/ui/organism/FacilityReguler";
+import ContactCard from "../../components/ui/organism/ContactCard";
 
 function Reguler() {
   <DataAos />;
@@ -110,6 +111,8 @@ function Reguler() {
               />
             </IteneraryContainer>
           </section>
+
+          <ContactCard />
         </main>
       </Mainlayout>
     </>
