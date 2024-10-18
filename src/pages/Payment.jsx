@@ -17,7 +17,7 @@ function Payment() {
   return (
     <>
       <Mainlayout>
-        <main>
+        <main className="overflow-hidden">
           <HeroCard src={HeroImg} />
           <section className="px-4">
             <h1 className="text-center font-gilda text-5xl my-8 text-brand-600 font-bold">

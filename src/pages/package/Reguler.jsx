@@ -15,7 +15,7 @@ function Reguler() {
   return (
     <>
       <Mainlayout>
-        <main>
+        <main className="overflow-hidden">
           <HeroCard src={heroImg} h1={"Reguler"} />
           {/* info section */}
           <InfoPackage

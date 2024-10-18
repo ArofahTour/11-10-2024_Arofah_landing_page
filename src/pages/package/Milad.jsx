@@ -16,7 +16,7 @@ function Milad() {
   return (
     <>
       <Mainlayout>
-        <main>
+        <main className="overflow-hidden">
           <HeroCard src={heroImg} h1={"Milad"} top={"-10%"} />
           {/* info section */}
           <InfoPackage
