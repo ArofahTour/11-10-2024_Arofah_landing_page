@@ -69,6 +69,9 @@ function Header() {
             <li className="text-2xl mb-8 ml-4 font-semibold mr-8 transition duration-300 hover:text-brand-400 min-[600px]:text-3xl ">
               <Link to={"/facility"}>Fasilitas</Link>
             </li>
+            <li className="text-2xl mb-8 ml-4 font-semibold mr-8 transition duration-300 hover:text-brand-400 min-[600px]:text-3xl ">
+              <Link to={"/gallery"}>Gallery Arofah</Link>
+            </li>
           </ul>
 
           {/* navbar button */}
@@ -114,6 +117,9 @@ function Header() {
             </li>
             <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 min-[1280px]:text-3xl ">
               <Link to={"/facility"}>Fasilitas</Link>
+            </li>
+            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 min-[1280px]:text-3xl ">
+              <Link to={"/gallery"}>Gallery Arofah</Link>
             </li>
           </ul>
         </nav>

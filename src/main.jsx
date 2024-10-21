@@ -13,6 +13,7 @@ import Paket from "./pages/Paket";
 
 import Reguler from "./pages/package/Reguler";
 import Milad from "./pages/package/Milad";
+import Galery from "./pages/Galery";
 
 const root = createBrowserRouter([
   {
@@ -49,8 +50,8 @@ const root = createBrowserRouter([
     element: <Milad />,
   },
   {
-    path: "/facility",
-    element: <Facility />,
+    path: "/gallery",
+    element: <Galery />,
   },
 ]);
 
