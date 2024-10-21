@@ -71,7 +71,7 @@ function Home() {
                 ></div>
                 <img
                   src={heroImg}
-                  className="absolute top-[-40%] left-0  w-[full] 
+                  className="absolute top-[-30%] left-0  w-[76%] 
                   min-[1280px]:left-[28%] min-[1280px]:top-[-10%] min-[1280px]:w-[40%]
                   min-[1440px]:left-[25%] min-[1440px]:top-[-22%] min-[1440px]:w-[45%] 
                   min-[1366px]:left-[25%] min-[1366px]:top-[-20%] min-[1366px]:w-[45%] 
@@ -89,13 +89,21 @@ function Home() {
           "
           >
             {/* display img */}
-            <div className="w-full px-4 py-8  bg-brand-600 text-neutral-100  text-center">
-              <h3 className="text-[1.1rem] font-urbanist">
+            <div
+              className="w-full px-4 py-8  bg-brand-600 text-neutral-100  text-center 
+           min-[1280px]:grid min-[1280px]:grid-cols-3 min-[1280px]:items-center min-[1280px]:gap-2 min-[1280px]:py-16
+            
+           
+            "
+            >
+              <h3 className="text-[1.1rem] font-urbanist" data-aos="fade-right">
                 Raih keberkahan ibadah umroh Anda bersama Arofah Tour & Travel,
                 mitra terpercaya menuju tanah suci!
               </h3>
               <h2
-                className=" text-[1.4rem] border-neutral-100 border-t-2 border-b-2 my-4 py-6"
+                className=" text-[1.5rem] border-neutral-100 border-t-2 border-b-2 my-4 py-6
+                min-[1280px]:border-y-0 min-[1280px]:border-x-2 
+                "
                 data-aos="fade-right"
               >
                 Biro perjalanan umroh terdepan di Sumatera Selatan
