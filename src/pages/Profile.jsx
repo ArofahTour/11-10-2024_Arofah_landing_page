@@ -26,7 +26,7 @@ function Profile() {
       <Mainlayout>
         <main className="overflow-hidden">
           {/* hero section */}
-          <HeroCard src={heroImg} h1={"Tentang Kami"} top={"0%"} />
+          <HeroCard src={heroImg} h1={"Tentang Kami"} top={"5"} />
 
           {/* about us section */}
           <section className="px-4 mt-16 text-center ">

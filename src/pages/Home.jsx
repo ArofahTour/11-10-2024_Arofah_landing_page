@@ -71,7 +71,7 @@ function Home() {
                 ></div>
                 <img
                   src={heroImg}
-                  className="absolute top-[-30%] left-0  w-[76%] 
+                  className="absolute top-[-20%]  left-0  w-[76%] 
                   min-[1280px]:left-[28%] min-[1280px]:top-[-10%] min-[1280px]:w-[40%]
                   min-[1440px]:left-[25%] min-[1440px]:top-[-22%] min-[1440px]:w-[45%] 
                   min-[1366px]:left-[25%] min-[1366px]:top-[-20%] min-[1366px]:w-[45%] 

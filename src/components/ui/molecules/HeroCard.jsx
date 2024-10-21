@@ -7,7 +7,9 @@ function HeroCard(props) {
           <img
             src={props.src}
             alt="hero-img"
-            className={`absolute top-[${props.top}] left-[0%] z[-1] min-[390px]:top-[-10%]`}
+            className={
+              `absolute left-[0%] z[-1] min-[390px]:top-[-10%]` + props.top
+            }
           />
           <h1 className="absolute text-5xl font-gilda text-white-100 z-[2] text-center">
             {props.h1}

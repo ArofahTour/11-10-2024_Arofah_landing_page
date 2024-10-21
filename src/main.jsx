@@ -48,6 +48,10 @@ const root = createBrowserRouter([
     path: "/paket/milad",
     element: <Milad />,
   },
+  {
+    path: "/facility",
+    element: <Facility />,
+  },
 ]);
 
 createRoot(document.getElementById("root")).render(
