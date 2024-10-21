@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
 import logo from "../../assets/logo/logo_arofah-removebg.png";
 
@@ -9,12 +9,42 @@ function Header() {
   const btn3Ref = useRef(null);
 
   const linkBoxRef = useRef(null);
+  const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setHasScrolled(true);
+      } else {
+        setHasScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Bersihkan event listener saat komponen di-unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
       <header>
-        <nav className="flex justify-between items-end fixed w-full  p-4 pb-0 shadow-sm shadow-[0_1px_5px_0_hsla(0, 0%, 0%, 0.5)] z-10 backdrop-blur-sm">
-          <img src={logo} alt="arofah-logo" className="w-[5rem]" />
+        <nav
+          className={`flex justify-between items-end fixed w-full  p-4 pb-0 ${
+            hasScrolled
+              ? `shadow-sm shadow-[0_1px_5px_0_hsla(0, 0%, 0%, 0.5)] backdrop-blur-sm`
+              : ``
+          }  z-10  min-[1280px]:items-center`}
+        >
+          <Link to={"/"}>
+            <img
+              src={logo}
+              alt="arofah-logo"
+              className="w-[5rem] min-[1280px]:w-[8rem] min-[1280px]:ml-[2rem] cursor-pointer"
+            />
+          </Link>
 
           {/* navbar links */}
           <ul
@@ -63,20 +93,20 @@ function Header() {
           </div>
 
           {/* lg navbar */}
-          <ul className="max-[602px]:hidden flex gap-[2rem] mr-4 items-center lg:">
-            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 ">
+          <ul className="max-[602px]:hidden flex gap-[2rem] mr-4 items-center min-[1280px]:mr-12 ">
+            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 min-[1280px]:text-3xl ">
               <Link to={"/"}>Home</Link>
             </li>
-            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 ">
+            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 min-[1280px]:text-3xl ">
               <Link to="/profile">Profile</Link>
             </li>
-            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 ">
+            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 min-[1280px]:text-3xl ">
               <Link to={"/paket"}>Paket umroh</Link>
             </li>
-            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 ">
+            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 min-[1280px]:text-3xl ">
               <Link to={"/reqruitments"}>Persyaratan</Link>
             </li>
-            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 ">
+            <li className="text-2xl mb-8 font-semibold text-brand-600 transition duration-300 hover:text-brand-400 min-[1280px]:text-3xl ">
               <Link to={"/payment"}>Pembayaran</Link>
             </li>
           </ul>

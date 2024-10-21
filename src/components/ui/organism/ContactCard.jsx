@@ -13,6 +13,13 @@ function ContactCard() {
       easing: "ease-out-cubic",
     });
   }, []);
+
+  const phoneNumber = "6281366921041";
+  const email = "arofah.tourtravel1919@gmail.com";
+  const message = "Assalamualaikum bapak/ibu, saya mau daftar umroh"; // Teks yang ingin dikirim
+  const encodedMessage = encodeURIComponent(message); // Menyandikan teks
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   return (
     <>
       <section className="px-4">
@@ -45,15 +52,19 @@ function ContactCard() {
           </div>
 
           <div data-aos="fade-right" data-aos-delay="250">
-            <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400">
-              <Mail />
-            </button>
+            <a href={`mailto:${email}`}>
+              <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400">
+                <Mail />
+              </button>
+            </a>
           </div>
 
           <div data-aos="fade-left" data-aos-delay="350">
-            <button className="p-4 w-full bg-brand-600 text-white-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400 font-urbanist font-semibold ">
-              Daftar sekarang!
-            </button>
+            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+              <button className="p-4 w-full bg-brand-600 text-white-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400 font-urbanist font-semibold ">
+                Daftar sekarang!
+              </button>
+            </a>
           </div>
         </div>
       </section>

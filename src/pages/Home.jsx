@@ -36,25 +36,46 @@ function Home() {
     });
   }, []);
 
+  const phoneNumber = "6281366921041"; // Nomor telepon tanpa +
+  const message = "Assalamualaikum bapak/ibu, saya mau konsultasi soal umroh"; // Teks yang ingin dikirim
+  const encodedMessage = encodeURIComponent(message); // Menyandikan teks
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
   return (
     <>
       <Mainlayout>
         <main
-          className="pt-[8rem] font-gilda text-xl overflow-hidden"
+          className="pt-[8rem] min-[1280px]:pt-[10rem] font-gilda text-xl overflow-hidden"
           data-aos="fade-down"
         >
           {/* hero section - complete */}
           <section>
-            <h1 className="text-5xl px-4 mb-[-2.5rem]">
+            <h1 className="text-5xl px-4 mb-[-2.5rem] min-[1280px]:text-center min-[1280px]:text-8xl">
               <span className="text-brand-600">Teman terbaik</span> untuk
               perjalanan umroh anda.
             </h1>
-            <div className="relative w-full h-[30rem] px-0 overflow-hidden mt-[-7rem]  ">
-              <div className="overflow-hidden w-full h-[15rem] mt-[5rem] relative">
-                <div className="bg-orange-500 w-[40rem] h-[40rem] rounded-[50%] absolute top-[20%] left-[-40%]"></div>
+            <div className="relative w-full h-[30rem] px-0 overflow-hidden mt-[-7rem] ">
+              <div
+                className="overflow-hidden w-full h-[15rem] mt-[5rem] relative
+            min-[1280px]:h-[50rem]
+              "
+              >
+                <div
+                  className="bg-orange-500 w-[40rem] h-[40rem] rounded-[50%] absolute top-[20%] left-[-40%] 
+                min-[1280px]:left-[25%] min-[1280px]:left-[16%] min-[1280px]:w-[50rem] min-[1280px]:h-[50rem] min-[1280px]:top-[20%]
+                min-[1440px]:left-[15%] min-[1440px]:w-[60rem] min-[1440px]:h-[60rem] min-[1440px]:top-[10%]
+                 min-[1366px]:left-[18%] min-[1366px]:w-[50rem] min-[1366px]:h-[50rem] min-[1366px]:top-[15%]
+                
+                "
+                ></div>
                 <img
                   src={heroImg}
-                  className="absolute top-[-100%] left-0 h-[34rem] w-[full]"
+                  className="absolute top-[-40%] left-0  w-[full] 
+                  min-[1280px]:left-[28%] min-[1280px]:top-[-10%] min-[1280px]:w-[40%]
+                  min-[1440px]:left-[25%] min-[1440px]:top-[-22%] min-[1440px]:w-[45%] 
+                  min-[1366px]:left-[25%] min-[1366px]:top-[-20%] min-[1366px]:w-[45%] 
+                  "
                 />
               </div>
             </div>
@@ -62,7 +83,11 @@ function Home() {
           {/* complete */}
 
           {/* marketing section - complete */}
-          <section className="mt-[-10rem]">
+          <section
+            className="mt-[-10rem]
+          min-[1280px]:mt-0
+          "
+          >
             {/* display img */}
             <div className="w-full px-4 py-8  bg-brand-600 text-neutral-100  text-center">
               <h3 className="text-[1.1rem] font-urbanist">
@@ -238,14 +263,19 @@ function Home() {
                 Dapatkan promo terbaik kami sekarang!
               </h2>
 
-              <Link className=" hover:opacity-[80%] transition duration-200">
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className=" hover:opacity-[80%] transition duration-200"
+              >
                 <button
                   className="  text-md font-urbanist bg-brand-600 text-white-100 px-8 py-4 rounded-md mt-8  "
                   data-aos="fade-right"
                 >
                   Hubungi kami
                 </button>
-              </Link>
+              </a>
             </div>
           </section>
         </main>

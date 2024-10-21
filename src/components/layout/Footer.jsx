@@ -13,11 +13,11 @@ function Footer() {
   return (
     <>
       <footer className="pt-[2rem] border-t-2 pb-4 border-brand-300 mt-12 overflow-hidden">
-        <div className="ml-4">
+        <div className="ml-4 text-center">
           <img
             src={logo}
             alt="arofah-logo"
-            className="w-[6rem]"
+            className="w-[6rem] min-[1280px]:w-[7rem]  m-auto"
             data-aos="fade-right"
             data-aos-delay="100"
           />
@@ -30,7 +30,7 @@ function Footer() {
           </h1>
         </div>
         <div>
-          <div className="flex gap-4 m-8 text-brand-600">
+          <div className="flex gap-4 m-8 text-brand-600  w-fit mx-auto">
             <div data-aos="fade-right" data-aos-delay="100">
               <button className="p-4 bg-brand-100 rounded-full transition duration-300 hover:-translate-y-2 hover:bg-brand-400">
                 <Facebook />
