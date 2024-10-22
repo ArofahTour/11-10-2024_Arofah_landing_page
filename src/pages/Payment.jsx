@@ -3,7 +3,7 @@ import HeroCard from "../components/ui/molecules/HeroCard";
 
 import HeroImg from "../assets/img/atm-card.jpg";
 import BcaImg from "../assets/img/bca.jpg";
-import packageImg1 from "../assets/img/10-2024/package_1.jpeg";
+import packageImg1 from "../assets/img/package/package_1.jpeg";
 
 import DivCard from "../components/ui/atoms/DivCard";
 import PackageImg from "../components/ui/atoms/PackageImg";

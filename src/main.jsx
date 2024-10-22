@@ -14,6 +14,7 @@ import Paket from "./pages/Paket";
 import Reguler from "./pages/package/Reguler";
 import Milad from "./pages/package/Milad";
 import Galery from "./pages/Galery";
+import NewYear from "./pages/package/NewYear";
 
 const root = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const root = createBrowserRouter([
   {
     path: "/paket/milad",
     element: <Milad />,
+  },
+  {
+    path: "/paket/tahun-baru",
+    element: <NewYear />,
   },
   {
     path: "/gallery",

@@ -18,8 +18,8 @@ import heroImg from "../assets/img/hero-img-removebg.png";
 import Card from "../components/ui/molecules/Card";
 import CardBrand from "../components/ui/organism/CardBrand";
 
-import img1 from "../assets/img/10-2024/package_1.jpeg";
-import img2 from "../assets/img/10-2024/package_2.jpeg";
+import img1 from "../assets/img/package/package_1.jpeg";
+import img2 from "../assets/img/package/package_2.jpeg";
 
 import partnerImg1 from "../assets/logo/partner-logo/airasia.png";
 import partnerImg2 from "../assets/logo/partner-logo/emirates.png";
@@ -63,7 +63,7 @@ function Home() {
               >
                 <div
                   className="bg-orange-500 w-[40rem] h-[40rem] rounded-[50%] absolute top-[20%] left-[-40%] 
-                min-[1280px]:left-[25%] min-[1280px]:left-[16%] min-[1280px]:w-[50rem] min-[1280px]:h-[50rem] min-[1280px]:top-[20%]
+                min-[1280px]:left-[25%]  min-[1280px]:w-[50rem] min-[1280px]:h-[50rem] min-[1280px]:top-[20%]
                 min-[1440px]:left-[15%] min-[1440px]:w-[60rem] min-[1440px]:h-[60rem] min-[1440px]:top-[10%]
                  min-[1366px]:left-[18%] min-[1366px]:w-[50rem] min-[1366px]:h-[50rem] min-[1366px]:top-[15%]
                 

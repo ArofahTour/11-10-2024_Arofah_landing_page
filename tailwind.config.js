@@ -44,6 +44,15 @@ export default {
       xl: "1280px",
       "2xl": "1536px",
     },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        '.backface-hidden': {
+          'backface-visibility': 'hidden',
+        },
+      };
+      addUtilities(newUtilities, ['hover']);
+    },
+  ],
   }
 }
