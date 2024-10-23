@@ -6,6 +6,7 @@ import img1 from "../assets/img/makkah-2.jpg";
 import packageImg1 from "../assets/img/package/package_1.jpeg";
 import packageImg2 from "../assets/img/package/package_2.jpeg";
 import packageImg3 from "../assets/img/package/janPackage.jpeg";
+import packageImg4 from "../assets/img/package/december.jpg";
 
 import DataAos from "../components/ui/molecules/DataAos";
 
@@ -24,12 +25,7 @@ function Paket() {
     <>
       <Mainlayout>
         <main className="overflow-hidden">
-          <HeroCard
-            src={img1}
-            className="top-[-10%]"
-            h1={"Paket Umroh kami"}
-            top={"0%"}
-          />
+          <HeroCard src={img1} className="top-[-10%]" top={"0%"} />
           {/* paket 1 */}
           <DivCard>
             <PackageImg src={packageImg1} alt={"package-img"} />
@@ -59,11 +55,23 @@ function Paket() {
             <PackageImg src={packageImg3} alt={"package-img"} />
             <TimesCard time={"12 Hari"} />
             <PackageTitle
-              title={"Promo Tahun Baru"}
+              title={"Paket umroh plus taif"}
               depart={"Depart: January 2025"}
               p={"4"}
             />
-            <PackagePrice price={"36.5jt"} link={"/paket/tahun-baru"} />
+            <PackagePrice price={"35.5jt"} link={"/paket/paket-3"} />
+          </DivCard>
+
+          {/* paket 4 */}
+          <DivCard>
+            <PackageImg src={packageImg4} alt={"package-img"} />
+            <TimesCard time={"12 Hari"} />
+            <PackageTitle
+              title={"Paket Umroh Reguler Desember"}
+              depart={"Depart: January 2025"}
+              p={"4"}
+            />
+            <PackagePrice price={"35.5jt"} link={"/paket/paket-4"} />
           </DivCard>
 
           <ContactCard />

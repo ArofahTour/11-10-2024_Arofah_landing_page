@@ -24,20 +24,6 @@ function Card(props) {
         <p className="text-[1.1rem] font-urbanist text-neutral-500">
           {props.p}.
         </p>
-
-        <div className="mt-12 flex justify-end">
-          <Link>
-            <button
-              type="button"
-              className="text-[1.1rem] text-center font-urbanist text-brand-600"
-            >
-              Lebih detail{" "}
-              <span>
-                <ArrowRight className="inline" />
-              </span>
-            </button>
-          </Link>
-        </div>
       </div>
     </>
   );

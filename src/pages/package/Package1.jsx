@@ -1,59 +1,33 @@
+import React from "react";
 import Mainlayout from "../../components/layout/Mainlayout";
-import ContactCard from "../../components/ui/organism/ContactCard";
-
-import heroImg from "../../assets/img/package/janHero.jpg";
 import HeroCard from "../../components/ui/molecules/HeroCard";
 import InfoPackage from "../../components/ui/organism/InfoPackage";
-import IteneraryContainer from "../../components/ui/organism/IteneraryContainer";
 import H2small from "../../components/ui/atoms/H2small";
-import TextCard from "../../components/ui/atoms/TextCard";
+import heroImg from "../../assets/img/package/package_1.jpeg";
 
-function NewYear() {
+import IteneraryContainer from "../../components/ui/organism/IteneraryContainer";
+import TextCard from "../../components/ui/atoms/TextCard";
+import DataAos from "../../components/ui/molecules/DataAos";
+import FacilityReguler from "../../components/ui/organism/FacilityReguler";
+import ContactCard from "../../components/ui/organism/ContactCard";
+
+function Package1() {
+  <DataAos />;
   return (
     <>
       <Mainlayout>
         <main className="overflow-hidden">
-          <HeroCard src={heroImg} h1={"Reguler"} />
+          <HeroCard src={heroImg} />
           {/* info section */}
           <InfoPackage
-            duration={"12 Days"}
+            duration={"9 Days"}
             depart={"januari 2025"}
             group={"20 people"}
-            flight={"Citilink, Saudi"}
+            flight={"INDIGO"}
           />
 
           {/* Facility section */}
-          <section className="px-4">
-            <H2small h2={"Fasilitas"} />
-            <div className="p-4 gap-4 font-urbanist">
-              <ul className="list-disc">
-                <li>Tiket Pesawat Citilink Palembang - jakarta </li>
-                <li>Tiket Pesawat Saudi airlines jakarta - jeddah </li>
-                <li>Visa Umroh</li>
-                <li>Bus AC</li>
-                <li>Hotel Mekkah ⭐4 (Olayan Ajyad/Setaraf)</li>
-                <li>Hotel Madinah ⭐4 (Jawharat Al Rasheed/Setaraf) </li>
-                <li>Muthowif Bahasa Indonesia</li>
-                <li>Citytour Mekkah & Madinah</li>
-                <li>Citytour thaif</li>
-                <li>Makan 3x Sehari</li>
-                <li>Manasik 2x</li>
-                <li>perlengkapan muhibbin</li>
-                <ul className="list-decimal ml-4">
-                  <li>Koper besar 24</li>
-                  <li>Koper kecil 16</li>
-                  <li>Tas jinjing</li>
-                  <li>Bahan seragam</li>
-                  <li>Buku Manasik</li>
-                  <li>Sal Arofah</li>
-                  <li>Bantal Leher</li>
-                  <li>Id Card</li>
-                  <li>Zam - zam 5 liter</li>
-                  <li>ihrom atau mukenah</li>
-                </ul>
-              </ul>
-            </div>
-          </section>
+          <FacilityReguler />
 
           {/* Itinerary section */}
           <section className="px-4 my-8">
@@ -146,4 +120,4 @@ function NewYear() {
   );
 }
 
-export default NewYear;
+export default Package1;

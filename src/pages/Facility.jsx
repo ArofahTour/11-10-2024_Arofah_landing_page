@@ -19,7 +19,14 @@ import img6 from "../assets/img/facility/6.jpeg";
 import img7 from "../assets/img/facility/7.jpeg";
 import img8 from "../assets/img/facility/8.jpeg";
 
+import pesawat from "../assets/img/facility/fasilitas/pesawat.jpg";
+import visa from "../assets/img/facility/fasilitas/visa.jpg";
+import hotel from "../assets/img/facility/fasilitas/hotel.jpg";
+import bus from "../assets/img/facility/fasilitas/bus.jpg";
+
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { ArrowRight } from "react-feather";
+import { Link } from "react-router-dom";
 
 function Facility() {
   useEffect(() => {
@@ -33,10 +40,12 @@ function Facility() {
       <Mainlayout>
         <main className="overflow-hidden">
           <HeroCard src={img} />
-          <h1 className="text-5xl font-gilda text-center my-8">Fasilitas</h1>
+          <h1 className="text-5xl font-gilda text-center my-8 font-bold text-brand-600">
+            Fasilitas
+          </h1>
 
           {/* fasilitas section */}
-          <section className="">
+          <section>
             <div className="px-4">
               <h2 className=" text-2xl text-neutral-900 font-urbanist font-semibold ">
                 Fasilitas yang akan diterima oleh jamaah Arofah
@@ -48,23 +57,44 @@ function Facility() {
                 spaceBetween={50}
                 data-aos="fade-up"
               >
-                <SwiperSlide>
-                  <div className="overflow-hidden w-[16rem] h-[16rem] rounded-md bg-black shadow-md shadow-black transition duration-200 ease-in-out cursor-pointer hover:scale-[105%] mx-auto my-8"></div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <div className="overflow-hidden w-[16rem] h-[16rem] rounded-md shadow-md shadow-black transition duration-200 ease-in-out cursor-pointer hover:scale-[105%] mx-auto my-8">
-                    <img src={img} alt="" className="" />
+                <SwiperSlide className="pb-8">
+                  <div className="overflow-hidden w-[16rem]  rounded-md shadow-md shadow-black transition duration-200 ease-in-out cursor-pointer hover:scale-[105%] mx-auto my-8">
+                    <img src={pesawat} alt="pesawat" className="" />
                   </div>
+                  <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                    Tiket pesawat
+                  </p>
                 </SwiperSlide>
-                <SwiperSlide>
-                  <div className="overflow-hidden w-[16rem] h-[16rem] rounded-md shadow-md shadow-black transition duration-200 ease-in-out cursor-pointer hover:scale-[105%] mx-auto my-8">
-                    <img src={img} alt="" className="" />
+                <SwiperSlide className="pb-8">
+                  <div className="overflow-hidden w-[16rem] rounded-md shadow-md shadow-black transition duration-200 ease-in-out cursor-pointer hover:scale-[105%] mx-auto my-8">
+                    <img src={visa} alt="visa" className="" />
                   </div>
+                  <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                    Visa umroh
+                  </p>
                 </SwiperSlide>
-                <SwiperSlide>
-                  <div className="overflow-hidden w-[16rem] h-[16rem] rounded-md shadow-md shadow-black transition duration-200 ease-in-out cursor-pointer hover:scale-[105%] mx-auto my-8">
-                    <img src={img} alt="" className="" />
+                <SwiperSlide className="pb-8">
+                  <div className="overflow-hidden w-[16rem] rounded-md shadow-md shadow-black transition duration-200 ease-in-out cursor-pointer hover:scale-[105%] mx-auto my-8">
+                    <img src={bus} alt="bus" className="" />
                   </div>
+                  <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                    Bus Ac
+                  </p>
+                </SwiperSlide>
+                <SwiperSlide className="pb-8">
+                  <div className="overflow-hidden w-[16rem] rounded-md shadow-md shadow-black transition duration-200 ease-in-out cursor-pointer hover:scale-[105%] mx-auto my-8">
+                    <img src={hotel} alt="hotel" className="" />
+                  </div>
+                  <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                    Hotel bintang 4
+                  </p>
+                </SwiperSlide>
+                <SwiperSlide className="pb-8">
+                  <Link to={"/paket"}>
+                    <div className="overflow-hidden w-[16rem] h-[10rem] flex justify-center items-center rounded-md shadow-md shadow-black transition duration-200 ease-in-out cursor-pointer hover:scale-[105%] mx-auto my-8 text-2xl font-urbanist text-brand-600 font-bold ">
+                      Lihat selengkapnya <ArrowRight />
+                    </div>
+                  </Link>
                 </SwiperSlide>
               </Swiper>
             </div>
@@ -73,7 +103,7 @@ function Facility() {
           {/* section perlengkapan */}
           <section className="px-4 font-urbanist">
             <h2
-              className="text-2xl font-semibold text-brand-600 mt-8"
+              className="text-2xl font-semibold text-neutral-900  mt-8"
               data-aos="fade-right"
             >
               Perlengkapan yang disediakan untuk jamaah Arofah
@@ -84,45 +114,72 @@ function Facility() {
               spaceBetween={50}
               data-aos="fade-up"
             >
-              <SwiperSlide>
+              <SwiperSlide className="pb-8">
                 <div className="overflow-hidden rounded-xl w-[16rem] h-[20rem] shadow-md shadow-black mx-auto my-8 cursor-pointer transition duration-200  hover:scale-[105%]  ">
-                  <img src={img4} alt="" />
+                  <img src={img4} alt="Koper besar 24" />
                 </div>
+                <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                  Koper besar 24
+                </p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="overflow-hidden rounded-xl w-[16rem] h-[20rem] shadow-md shadow-black mx-auto my-8 cursor-pointer transition duration-200  hover:scale-[105%]  ">
-                  <img src={img6} alt="" />
+                  <img src={img6} alt="Koper Kecil 16" />
                 </div>
+                <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                  Koper Kecil 16
+                </p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="overflow-hidden rounded-xl w-[16rem] h-[20rem] shadow-md shadow-black mx-auto my-8 cursor-pointer transition duration-200  hover:scale-[105%]  ">
-                  <img src={img3} alt="" />
+                  <img src={img3} alt="Bahan seragam" />
                 </div>
+                <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                  Bahan seragam(paket milad)
+                </p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="overflow-hidden rounded-xl w-[16rem] h-[20rem] shadow-md shadow-black mx-auto my-8 cursor-pointer transition duration-200  hover:scale-[105%]  ">
-                  <img src={img} alt="" />
+                  <img src={img7} alt="Bahan seragam" />
                 </div>
+                <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                  Bahan seragam(paket reguler)
+                </p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="overflow-hidden rounded-xl w-[16rem] h-[20rem] shadow-md shadow-black mx-auto my-8 cursor-pointer transition duration-200  hover:scale-[105%]  ">
-                  <img src={img5} alt="" />
+                  <img src={img5} alt="Bantal Leher" />
                 </div>
+                <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                  Bantal Leher
+                </p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="overflow-hidden rounded-xl w-[16rem] h-[20rem] shadow-md shadow-black mx-auto my-8 cursor-pointer transition duration-200  hover:scale-[105%]  ">
-                  <img src={img2} alt="" />
+                  <img src={img2} alt="Ihrom/Mukena" />
                 </div>
+
+                <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                  Ihrom/Mukena
+                </p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="overflow-hidden rounded-xl w-[16rem] h-[20rem] shadow-md shadow-black mx-auto my-8 cursor-pointer transition duration-200  hover:scale-[105%]  ">
-                  <img src={img7} alt="" />
+                  <img src={img} alt=" Buku Manasik" />
                 </div>
+
+                <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                  Buku Manasik
+                </p>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="overflow-hidden rounded-xl w-[16rem] h-[20rem] shadow-md shadow-black mx-auto my-8 cursor-pointer transition duration-200  hover:scale-[105%]  ">
-                  <img src={img8} alt="" />
+                  <img src={img8} alt="Sal Arofah" />
                 </div>
+
+                <p className="text-center font-urbanist text-xl font-semibold text-neutral-900">
+                  Sal Arofah
+                </p>
               </SwiperSlide>
             </Swiper>
           </section>

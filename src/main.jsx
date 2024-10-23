@@ -11,10 +11,12 @@ import Profile from "./pages/Profile";
 import Reqruitments from "./pages/Reqruitments";
 import Paket from "./pages/Paket";
 
-import Reguler from "./pages/package/Reguler";
-import Milad from "./pages/package/Milad";
 import Galery from "./pages/Galery";
-import NewYear from "./pages/package/NewYear";
+
+import Package1 from "./pages/package/Package1";
+import Package2 from "./pages/package/Package2";
+import Package3 from "./pages/package/Package3";
+import Package4 from "./pages/package/Package4";
 
 const root = createBrowserRouter([
   {
@@ -44,15 +46,19 @@ const root = createBrowserRouter([
   },
   {
     path: "/paket/reguler",
-    element: <Reguler />,
+    element: <Package1 />,
   },
   {
     path: "/paket/milad",
-    element: <Milad />,
+    element: <Package2 />,
   },
   {
-    path: "/paket/tahun-baru",
-    element: <NewYear />,
+    path: "/paket/paket-3",
+    element: <Package3 />,
+  },
+  {
+    path: "/paket/paket-4",
+    element: <Package4 />,
   },
   {
     path: "/gallery",
